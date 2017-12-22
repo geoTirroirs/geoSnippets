@@ -1,0 +1,2 @@
+GeoHistorical Schema (GHS) – documentation
+===
