@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DICTIONNAIRE departement="Côte-d’Or">
   <article id="3" pg="1">
+    <!-- Abbaye: forêt avec problème de localisation -->
     <vedette>
       <sm>Abbaye (L’),</sm>
     </vedette>
@@ -10,12 +11,11 @@
       <date>1236</date> 
       <reference>(Oigny, H 668)</reference>.</forme_ancienne>
     <forme_ancienne>— <i>Bois de l’Abbaye,</i> 
-      <date>
-        <sm>xix</sm>
-        <sup>e</sup> siècle</date> 
+      <date><sm>xix</sm><sup>e</sup> siècle</date> 
       <reference>(Administration des Forêts)</reference>.</forme_ancienne>
   </article>
   <article id="9" pg="1">
+    <!-- hameau, localisation à la commune -->
     <vedette>
       <sm>Abbayotte (L’),</sm>
     </vedette>
@@ -31,15 +31,14 @@
       <reference>(Cassini)</reference>.</forme_ancienne>
   </article>
   <article id="10" pg="1">
+    <!-- commune, localisation au canton -->
     <vedette>
       <sm>Abergement-Foigney (L’),</sm>
     </vedette>
     <definition>
       <localisation>canton de Genlis</localisation>.</definition>
     <forme_ancienne>— <i>Albergamentum,</i> 
-      <date>
-        <sm>xii</sm>
-        <sup>e</sup> siècle</date> 
+      <date><sm>xii</sm><sup>e</sup> siècle</date> 
       <reference>(bibl. Dijon. ms. 145)</reference>.</forme_ancienne>
     <forme_ancienne>— <i>Herbergamentum,</i> 
       <date>1218</date> 
@@ -81,6 +80,7 @@
     <insee>21330</insee>
   </article>
   <article id="16" pg="2">
+    <!-- Cas problématique. UN article pour DEUX toponymes : des fontaines du même nom dans trois communes distinctes. -->
     <vedette>
       <sm>Abîme (L’),</sm>
     </vedette>
@@ -89,6 +89,7 @@
       <reference>(Garnier, nos 500, 117 et 217)</reference>.</definition>
   </article>
   <article id="22" pg="3">
+    <!-- rivière, problème de localisation -->
     <vedette>
       <sm>Acier (Rû d’),</sm>
     </vedette>
@@ -98,12 +99,11 @@
       <date>1533</date> 
       <reference>(Époisses, terrier, f° 35 r°)</reference>.</forme_ancienne>
     <forme_ancienne>— <i>Ruisseau d’Acier,</i> 
-      <date>
-        <sm>xix</sm>
-        <sup>e</sup> siècle</date> 
+      <date><sm>xix</sm><sup>e</sup> siècle</date> 
       <reference>(État-major)</reference>.</forme_ancienne>
   </article>
   <article id="40" pg="4">
+    <!-- lieu détruit localisé -->
     <vedette>
       <sm>Aiguillon (L’),</sm>
     </vedette>
@@ -120,12 +120,11 @@
       <date>1273</date> 
       <reference>(B 10479)</reference>.</forme_ancienne>
     <forme_ancienne>— <i>Éguillon,</i> 
-      <date>
-        <sm>xviii</sm>
-        <sup>e</sup> siècle</date> 
+      <date><sm>xviii</sm><sup>e</sup> siècle</date> 
       <reference>(Courtépée, II, 438)</reference>.</forme_ancienne>
   </article>
   <article id="45" pg="4">
+    <!-- lieu détruit non localisé -->
     <vedette>
       <sm>Aisey,</sm>
     </vedette>
@@ -139,6 +138,7 @@
       <reference>(B 10833)</reference>.</forme_ancienne>
   </article>
   <article id="52" pg="5">
+    <!-- lieu non localisé -->
     <vedette>«<sm>Albiacus</sm>»,</vedette>
     <definition>
       <typologie>lieu inconnu</typologie>, mais qui était dans le <localisation>voisinage de Savigny-le-Sec</localisation>.</definition>
@@ -147,6 +147,7 @@
       <reference>(cartul. de S.-Bénigne, ch. 82)</reference>.</forme_ancienne>
   </article>
   <article id="53" pg="5">
+    <!-- diachronie: on remonte à César ! -->
     <vedette>
       <sm>Alise-Sainte-Reine,</sm>
     </vedette>
@@ -160,21 +161,17 @@
     <forme_ancienne>— <i>Alisiia,</i> 
       <date>époque romaine</date> 
       <reference>(Lejay, p. 16)</reference>.</forme_ancienne>
-    <forme_ancienne>— Περὶ Ἀλησίαν, πόλίν Μανδουϐίων, <date>
-      <sm>i</sm>
-      <sup>er</sup> siècle</date> 
+    <forme_ancienne>— Περὶ Ἀλησίαν, πόλίν Μανδουϐίων,
+      <date><sm>i</sm><sup>er</sup> siècle</date> 
       <reference>(Cougny, I, 116, d’après Strabon, l. IV)</reference>.</forme_ancienne>
-    <forme_ancienne>— Ἀλεσία, <date>
-      <sm>iii</sm>
-      <sup>e</sup> siècle</date> 
+    <forme_ancienne>— Ἀλεσία,
+      <date><sm>iii</sm><sup>e</sup> siècle</date> 
       <reference>(Cougny, IV, 326, d’ap. Dion Cassius, l. XL)</reference>.</forme_ancienne>
     <forme_ancienne>— <i>Alisana loco,</i> 
       <date>époque franque</date> 
       <reference>(Bolland., <date>sept. III</date>, 26)</reference>.</forme_ancienne>
     <forme_ancienne>— <i>Alisiense oppidum,</i> 
-      <date>
-        <sm>vi</sm>
-        <sup>e</sup> siècle</date> 
+      <date><sm>vi</sm><sup>e</sup> siècle</date> 
       <reference>(Bolland., <date>1<sup>er</sup> mai</date>)</reference>.</forme_ancienne>
     <forme_ancienne>— <i>Alisia cas</i>[<i>tro</i>], <date>époque mérovingienne</date> 
       <reference>(Prou, Monn. mérov., p. 35)</reference>.</forme_ancienne>
@@ -182,9 +179,7 @@
       <date>722</date> 
       <reference>(D. Plancher, I, pr., p. 1)</reference>.</forme_ancienne>
     <forme_ancienne>— <i>Elisia,</i> 
-      <date>
-        <sm>xii</sm>
-        <sup>e</sup> siècle, 1112 au plus tard</date> 
+      <date><sm>xii</sm><sup>e</sup> siècle, 1112 au plus tard</date> 
       <reference>(J. Laurent, n° 219)</reference>.</forme_ancienne>
     <forme_ancienne>— <i>Alisya,</i> 
       <date>1203</date> 
@@ -214,9 +209,7 @@
       <date>1783</date> 
       <reference>(Nouv. état gén., f° 286 v°)</reference>.</forme_ancienne>
     <forme_ancienne>— <i>Sainte Reyne,</i> 
-      <date>
-        <sm>xviii</sm>
-        <sup>e</sup> siècle</date> 
+      <date><sm>xviii</sm><sup>e</sup> siècle</date> 
       <reference>(Cassini)</reference>.</forme_ancienne>
     <commentaire>
       <p>Alise, célèbre par la défense de Vercingétorix et devenu ch.-l. de pagus dès l’<date>époque mérovingienne</date>, était, en <date>1789</date>, de la province de Bourgogne, bailliage de Semur. Son église, sous le vocable de Sainte-Reine, était le siège d’une cure du diocèse d’Autun, archiprêtré de Touillon, à la seule collation de l’évêque.</p>
@@ -227,49 +220,8 @@
     </commentaire>
     <insee>21008</insee>
   </article>
-  <article id="113" pg="11">
-    <vedette>
-      <sm>Arconcey,</sm>
-    </vedette>
-    <definition>
-      <typologie>ancien village</typologie>, incorporé à celui <localisation>d’Esbarres</localisation>.</definition>
-    <forme_ancienne>— <i>Arconceium,</i> 
-      <date>1252</date> 
-      <reference>(Cîteaux, H 447)</reference>.</forme_ancienne>
-    <forme_ancienne>— <i>Arconceyum,</i> 
-      <date>1288</date> 
-      <reference>(G 1042)</reference>.</forme_ancienne>
-    <forme_ancienne>— <i>Arcunceyum,</i> 
-      <date>1319</date> 
-      <reference>(G 1042)</reference>.</forme_ancienne>
-    <forme_ancienne>— <i>La ville d’Orsanx et d’Arconcié, la perroiche d’Arconcey,</i> 
-      <date>1323</date> 
-      <reference>(B 400, f<sup>os</sup> 106 r°, 106 <i>bis</i> r°)</reference>.</forme_ancienne>
-    <forme_ancienne>— <i>Arconcey sur Soone,</i> 
-      <date>1348</date> 
-      <reference>(B 10505)</reference>.</forme_ancienne>
-    <forme_ancienne>— <i>Arconcey suis Soogne,</i> 
-      <date>1371</date> 
-      <reference>(B 10519)</reference>.</forme_ancienne>
-    <forme_ancienne>— <i>Jehan, Odette d’Arconcie,</i> 
-      <date>1390</date> 
-      <reference>(U. Robert, I, p. 513)</reference>.</forme_ancienne>
-    <forme_ancienne>— <i>Arconcey es Barres,</i> 
-      <date>1548</date> 
-      <reference>(B 10627)</reference>.</forme_ancienne>
-    <forme_ancienne>— <i>Nostre Dame des Barres et Arconcey son secours,</i> 
-      <date>1629</date> 
-      <reference>(G 1042)</reference>.</forme_ancienne>
-    <forme_ancienne>— <i>Recouvray</i> (lisez <i>Arconcay</i>), <date>1657</date> 
-      <reference>(C 5208, f° 8 v°)</reference>.</forme_ancienne>
-    <forme_ancienne>— <i>Rue d’Arconcey,</i> 
-      <date>1783</date> 
-      <reference>(Nouv. état gén., f° 100 v°)</reference>.</forme_ancienne>
-    <commentaire>
-      <p>Arconcey était anciennement une paroisse du diocèse de Chalon-sur-Saône, doyenné d’Oscheret. L’évêque de Chalon en avait donné le patronage au chapitre de Saint-Vincent de ladite ville, en <date>1300</date> (G 1042). Robert Berthier est dit curé des Barres en <date>1451</date>, curé des Barres d’Orsans en <date>1456</date> et curé d’Arconcey en <date>1458</date> ; la dénomination de curé d’Arconcey était encore employée en <date>1516</date> (G 1042). Le nom d’Arconcey n’est plus connu aujourd’hui dans le pays.</p>
-    </commentaire>
-  </article>
   <article id="133" pg="13">
+    <!-- chef-lieu de canton -->
     <vedette>
       <sm>Arnay-le-Duc,</sm>
     </vedette>
@@ -282,11 +234,7 @@
       <date>1144</date> 
       <reference>(La Romagne, H 1230)</reference>.</forme_ancienne>
     <forme_ancienne>— <i>Ecclesia Sancti Jacobi de Arneto,</i> 
-      <date>
-        <sm>xii</sm>
-        <sup>e</sup> siècle</date>, cop., <date>
-          <sm>xvi</sm>
-          <sup>e</sup> siècle</date> 
+      <date><sm>xii</sm><sup>e</sup> siècle</date>, cop., <date><sm>xvi</sm><sup>e</sup> siècle</date> 
       <reference>(Chron. S.-Bénigne, édit., p. 199)</reference>.</forme_ancienne>
     <forme_ancienne>— <i>Arneium,</i> 
       <date>1229</date> 
@@ -332,26 +280,22 @@
       <reference>(décret du <date>27 sept.</date>)</reference> ; encore en <date>1814</date> 
       <reference>(Arch. nat. F<sup>2</sup> I, 843)</reference>.</forme_ancienne>
     <forme_ancienne>— <i>Arnay-le-Peuple,</i> 
-      <date>an <sm>ii</sm>
-      </date> 
+      <date>an <sm>ii</sm></date> 
       <reference>(L, Subsistances)</reference>.</forme_ancienne>
     <commentaire>
       <p>Parler local : <i>Er-nè.</i>
       </p>
-      <p>On a proposé pour Arnay-le-Duc des formes remontant à l’<date>époque romaine</date> et au <date>
-        <sm>x</sm>
-        <sup>e</sup> siècle</date>, qui sont inacceptables. <renvoi>Voir les déductions de M. Lejay (243-247) et de MM. Berthoud et Matruchot (III, 74, note 2)</renvoi>.</p>
+      <p>On a proposé pour Arnay-le-Duc des formes remontant à l’<date>époque romaine</date> et au <date><sm>x</sm><sup>e</sup> siècle</date>, qui sont inacceptables. <renvoi>Voir les déductions de M. Lejay (243-247) et de MM. Berthoud et Matruchot (III, 74, note 2)</renvoi>.</p>
       <p>Anc. château ducal.</p>
-      <p>Aux territoires d’Arnay-le-Duc et des communes voisines s’est livrée, le <date>27 juin 1570</date>, une bataille, dite bataille d’Arnay, entre l’amiral de Coligny et le maréchal de Cossé-Brissac. <renvoi>(Voir : Courtépée, IV, p. 32 et 60.)</renvoi>
-      </p>
+      <p>Aux territoires d’Arnay-le-Duc et des communes voisines s’est livrée, le <date>27 juin 1570</date>, une bataille, dite bataille d’Arnay, entre l’amiral de Coligny et le maréchal de Cossé-Brissac. <renvoi>(Voir : Courtépée, IV, p. 32 et 60.)</renvoi></p>
       <p>Arnay-le-Duc dépendait, en <date>1789</date>, de la province de Bourgogne ; il était ch.-l. d’un bailliage royal, le troisième de l’Auxois, et d’une subdélégation, avec un grenier à sel. Son église, sous le vocable de Saint-Laurent, était le siège d’un archiprêtré du diocèse d’Autun et d’une cure à la présentation de l’abbé de Saint-Bénigne de Dijon (ou du prieur de Saint-Jacques d’Arnay, suivant Courtépée, IV, 34).</p>
       <p>Le prieuré de Saint-Jacques dépendait de Saint-Bénigne de Dijon. Il y avait à Arnay une maison-Dieu ou hôpital Saint-Pierre (subsistant), un couvent de capucins, des ursulines et un collège (aujourd’hui école professionnelle).</p>
-      <p>Arnay-le-Duc a été ch.-l. de district, jusqu’à l’<date>an <sm>iv</sm>
-      </date>.</p>
+      <p>Arnay-le-Duc a été ch.-l. de district, jusqu’à l’<date>an <sm>iv</sm></date>.</p>
     </commentaire>
     <insee>21023</insee>
   </article>
   <article id="136" pg="13">
+    <!-- fontaine, localisation à la commune -->
     <vedette>
       <sm>Arnon,</sm> ou <sm>Arnou,</sm>
     </vedette>
