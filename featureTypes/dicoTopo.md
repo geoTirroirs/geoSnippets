@@ -8,25 +8,25 @@ Dico-Topo, *feature types*
 # Habitats et bâtiments
 
 # Voies
-chemin
-pont
-rue
-voie
-porte
-route
-passage
-carrefour
-signal
-barrière
-gué
-sentier
-borne
-promenade
-péage
-ruelle
-halte
-impasse
-passerelle
+* chemin
+* pont
+* rue
+* voie
+* porte
+* route
+* passage
+* carrefour
+* signal
+* barrière
+* gué
+* sentier
+* borne
+* promenade
+* péage
+* ruelle
+* halte
+* impasse
+* passerelle
 
 
 # Circonscriptions
