@@ -1,0 +1,283 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix cc: <http://creativecommons.org/ns#>.
+@prefix vann: <http://purl.org/vocab/vann/>.
+@prefix osspr: <http://data.ordnancesurvey.co.uk/ontology/spatialrelations/>.
+@prefix lsc: <http://linkedscience.org/lsc/ns#>.
+@prefix tisc: <http://observedchange.com/tisc/ns/#>.
+@prefix rlsp: <http://data.ign.fr/def/relationsspatiales#>.
+@prefix pleiades: <https://pleiades.stoa.org/places/vocab#>.
+@prefix geo: <http://www.opengis.net/ont/geosparql#>.
+@prefix geom: <http://data.ign.fr/def/geometrie#>.
+@prefix xysemantics: <http://data.ign.fr/def/xysemantics>.
+
+@prefix geotir: <http://datageotir.ensg.eu/vocab#>.
+
+# ---- Ontology metadata -----
+
+<http://datageotir.ensg.eu/vocab> a owl:Ontology;
+	dcterms:description "Ontologie pour des gazettiers géo-historiques"@fr;
+	dcterms:title "Ontologie pour des gazettiers géo-historiques"@fr;
+	dcterms:creator <https://github.com/MarionBrunet>, <https://github.com/GuillaumeGuebin> ;	
+	dcterms:contributor <http://recherche.ign.fr/labos/cogit/cv.php?prenom=Nathalie&nom=Abadie>,<http://crh.ehess.fr/index.php?5088>;
+	dcterms:issued "2018-01-17"^^xsd:date ;
+	dcterms:modified "2018-01-17"^^xsd:date ;
+	dcterms:rights "CC BY-SA 4.0" ;
+	cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+	vann:preferredNamespacePrefix "geotir" ;
+	vann:preferredNamespaceUri <http://datageotir.ensg.eu/vocab#> ;
+	owl:versionInfo "Version 1.0 - 2018-01-17" .
+
+# ---- Contributors ----
+
+<https://github.com/MarionBrunet> a foaf:Person.
+<https://github.com/GuillaumeGuebin> a foaf:Person.
+<http://recherche.ign.fr/labos/cogit/cv.php?prenom=Nathalie&nom=Abadie> a foaf:Person.
+<http://crh.ehess.fr/index.php?5088> a foaf:Person.
+
+# ---- Classes definition ----
+
+pleiades:Place a owl:Class;
+	rdfs:label "Place"@en;
+	rdfs:comment "Places are contexts for Locations and Names."@en;
+	rdfs:subClassOf skos:Concept.
+
+pleiades:Name a owl:Class;
+	rdfs:label "Name"@en;
+	rdfs:comment "Names describe appellations in the context of a Place."@en.
+
+pleiades:Location a owl:Class;
+	rdfs:label "Location"@en;
+	rdfs:comment "Locations describe natural or man-made features of the real world."@en.
+
+geo:Geometry a owl:Class;
+	skos:definition " The class represents the top-level geometry type. This class is equivalent to the UML class GM_Object defined in ISO 19107, and it is superclass of all geometry types."@en ;
+	rdfs:label "Geometry"@en ;
+	skos:prefLabel "Geometry"@en ;
+	dcterms:creator "OGC GeoSPARQL 1.0 Standard Working Group" ;
+	rdfs:subClassOf <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+	rdfs:isDefinedBy <http://www.opengis.net/spec/geosparql/1.0>, <http://www.opengis.net/ont/geosparql> ;
+	dcterms:contributor "Matthew Perry" ;
+	rdfs:comment "The class represents the top-level geometry type. This class is equivalent to the UML class GM_Object defined in ISO 19107, and it is superclass of all geometry types."@en ;
+	dcterms:description "The class represents the top-level geometry type. This class is equivalent to the UML class GM_Object defined in ISO 19107, and it is superclass of all geometry types."@en .
+
+geotir:Interval a owl:Class;
+	rdfs:label "Interval"@en;
+	rdfs:comment "period of time during which the name or the location has been used, to be chosen in Perio.do list  or to be created with tisc temporal vocabulary"@en;
+	rdfs:subClassOf skos:Concept, lsc:Research.
+
+# ---- Object Properties definition ----
+
+pleiades:hasName a owl:ObjectProperty;
+	rdfs:comment "Indicates that a place has a name"@en;
+	rdfs:label "polygon member"@en;
+	rdfs:domain pleiades:Place;
+	rdfs:range pleiades:Name.
+
+pleiades:hasLocation a owl:ObjectProperty;
+	rdfs:comment "Indicates that a place has a location"@en;
+	rdfs:label "has location"@en;
+	rdfs:domain pleiades:Place;
+	rdfs:range pleiades:Location.
+
+pleiades:hasFeatureType a owl:ObjectProperty;
+	rdfs:comment "Indicates that a place has a feature type"@en;
+	rdfs:label "has feature type"@en;
+	rdfs:domain pleiades:Place;
+	rdfs:range skos:Concept.
+
+pleiades:during a owl:ObjectProperty;
+	rdfs:comment "Indicates that the entity was in use or active during a named time period"@en;
+	rdfs:label "during"@en;
+	rdfs:domain pleiades:Name, pleiades:Location;
+	rdfs:range skos:Concept.
+
+geom:geometry a owl:ObjectProperty;
+	rdfs:comment "Primitive géométrique associée à un objet pour représenter sa localisation et éventuellement sa forme."@fr;
+	rdfs:label "a pour géométrie"@fr, "has geometry"@en;
+	rdfs:range geom:Geometry.
+
+xysemantics:absolutePositionalAccuracy a owl:ObjectProperty ;
+	rdfs:comment "Indicates the quality element that represents the absolute positional accuracy."@en ,"Désigne l'élément de qualité qui représente la précision absolue de position."@fr ;
+	rdfs:label "has absolute postitional accuracy"@en, "a pour précision absolue de position"@fr ;
+	rdfs:domain geom:Geometry ;
+	rdfs:range xysemantics:AbsolutePositionalAccuracy .
+
+rlsp:northOf a owl:ObjectProperty;
+	rdfs:label "au nord de"@fr, "north of"@en;
+	rdfs:comment "Propriété pour définir la position relative d'un objet topographique situé au nord d'un autre objet topographique."@fr;
+	rdfs:isDefinedBy rlsp:northOf;
+	rdfs:subPropertyOf tisc:northOf;
+	owl:inverseOf rlsp:southOf.
+	
+rlsp:southOf a owl:ObjectProperty;
+	rdfs:label "au sud de"@fr, "south of"@en;
+	rdfs:comment "Propriété pour définir la position relative d'un objet topographique situé au sud d'un autre objet topographique."@fr;
+	rdfs:isDefinedBy rlsp:southOf;
+	rdfs:subPropertyOf tisc:southOf;
+	owl:inverseOf rlsp:northOf.
+	
+rlsp:eastOf a owl:ObjectProperty;
+	rdfs:label "à l'est de"@fr, "east of"@en;
+	rdfs:comment "Propriété pour définir la position relative d'un objet topographique situé à l'est d'un autre objet topographique."@fr;
+	rdfs:isDefinedBy rlsp:eastOf;
+	rdfs:subPropertyOf tisc:eastOf;
+	owl:inverseOf rlsp:westOf.
+	
+rlsp:westOf a owl:ObjectProperty;
+	rdfs:label "à l'ouest de"@fr, "west of"@en;
+	rdfs:comment "Propriété pour définir la position relative d'un objet topographique situé à l'ouest d'un autre objet topographique."@fr;
+	rdfs:isDefinedBy rlsp:westOf;
+	rdfs:subPropertyOf tisc:westOf;
+	owl:inverseOf rlsp:eastOf.
+	
+rlsp:northEastOf a owl:ObjectProperty;
+	rdfs:label "au nord-est de"@fr, "north-east of"@en;
+	rdfs:comment "Propriété pour définir la position relative d'un objet topographique situé au nord-est d'un autre objet topographique."@fr;
+	rdfs:isDefinedBy rlsp:northEastOf;
+	rdfs:subPropertyOf tisc:northEastOf;
+	rdfs:subPropertyOf rlsp:northOf;
+	rdfs:subPropertyOf rlsp:eastOf;
+	owl:inverseOf rlsp:southWestOf.
+	
+rlsp:northWestOf a owl:ObjectProperty;
+	rdfs:label "au nord-ouest de"@fr, "north-west of"@en;
+	rdfs:comment "Propriété pour définir la position relative d'un objet topographique situé au nord-ouest d'un autre objet topographique."@fr;
+	rdfs:isDefinedBy rlsp:northWestOf;
+	rdfs:subPropertyOf tisc:northWestOf;
+	rdfs:subPropertyOf rlsp:nortOf;
+	rdfs:subPropertyOf rlsp:westOf;
+	owl:inverseOf rlsp:southEastOf.
+	
+rlsp:southEastOf a owl:ObjectProperty;
+	rdfs:label "au sud-est de"@fr, "south-east of"@en;
+	rdfs:comment "Propriété pour définir la position relative d'un objet topographique situé au sud-est d'un autre objet topographique."@fr;
+	rdfs:isDefinedBy rlsp:southEastOf;
+	rdfs:subPropertyOf tisc:southEastOf;
+	rdfs:subPropertyOf rlsp:southOf;
+	rdfs:subPropertyOf rlsp:eastOf;
+	owl:inverseOf rlsp:northWestOf.
+	
+rlsp:southWestOf a owl:ObjectProperty;
+	rdfs:label "au sud-ouest de"@fr, "south-west of"@en;
+	rdfs:comment "Propriété pour définir la position relative d'un objet topographique situé au sud-ouest d'un autre objet topographique."@fr;
+	rdfs:isDefinedBy rlsp:southWestOf;
+	rdfs:subPropertyOf tisc:southWestOf;
+	rdfs:subPropertyOf rlsp:southOf;
+	rdfs:subPropertyOf rlsp:westOf;
+	owl:inverseOf rlsp:northEastOf.
+	
+rlsp:near a owl:SymmetricProperty;
+	rdfs:label "proche de"@fr, "near to"@en;
+	rdfs:comment "Propriété pour définir la proximité de deux objets topographiques."@fr;
+	rdfs:isDefinedBy rlsp:near;
+	rdfs:subPropertyOf tisc:near. 
+		
+rlsp:contains a owl:ObjectProperty;
+	rdfs:label "contient"@fr, "contains"@en;
+	rdfs:comment "Propriété pour définir qu'un objet topographique contient un objet topographique cible."@fr;
+	rdfs:isDefinedBy rlsp:contains;
+	rdfs:subPropertyOf osspr:contains;
+	owl:inverseOf tisc:insideOf.
+
+geo:sfEquals a owl:ObjectProperty ;
+	rdfs:comment "Exists if the subject SpatialObject spatially equals the object SpatialObject. DE-9IM: TFFFTFFFT "@en ;
+	rdfs:domain <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+	rdfs:isDefinedBy <http://www.opengis.net/ont/geosparql>, <http://www.opengis.net/spec/geosparql/1.0> ;
+	rdfs:range <http://www.opengis.net/ont/geosparql#SpatialObject> ; 
+	rdfs:label "equals"@en .
+
+geo:sfContains a owl:ObjectProperty ;
+	rdfs:isDefinedBy <http://www.opengis.net/spec/geosparql/1.0>, <http://www.opengis.net/ont/geosparql> ;
+	rdfs:comment "Exists if the subject SpatialObject spatially contains the object SpatialObject. DE-9IM: T*****FF*"@en ;
+	rdfs:range <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+	rdfs:domain <http://www.opengis.net/ont/geosparql#SpatialObject> ;	
+	rdfs:label "contains"@en .
+
+geo:sfOverlaps a owl:ObjectProperty ;
+	rdfs:label "overlaps"@en ;
+	rdfs:isDefinedBy <http://www.opengis.net/spec/geosparql/1.0>, <http://www.opengis.net/ont/geosparql> ;
+	rdfs:domain <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+	rdfs:range <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+	rdfs:comment "Exists if the subject SpatialObject spatially overlaps the object SpatialObject. DE-9IM: T*T***T** "@en .
+
+geo:sfWithin a owl:ObjectProperty ;
+	rdfs:isDefinedBy <http://www.opengis.net/ont/geosparql>, <http://www.opengis.net/spec/geosparql/1.0> ;
+	rdfs:range <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+	rdfs:label "within"@en ;
+	rdfs:domain <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+	rdfs:comment "Exists if the subject SpatialObject is spatially within the object SpatialObject. DE-9IM: T*F**F***"@en .
+
+geo:sfTouches a owl:ObjectProperty ;
+	rdfs:isDefinedBy <http://www.opengis.net/spec/geosparql/1.0>, <http://www.opengis.net/ont/geosparql> ;
+	rdfs:domain <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+	rdfs:label "touches"@en ;
+	rdfs:range <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+	rdfs:comment "Exists if the subject SpatialObject spatially touches the object SpatialObject.DE-9IM: FT******* ^ F**T***** ^ F***T****"@en .
+
+geo:sfIntersects a owl:ObjectProperty ;	
+	rdfs:isDefinedBy <http://www.opengis.net/ont/geosparql>, <http://www.opengis.net/spec/geosparql/1.0> ;
+	rdfs:label "intersects"@en ;
+	rdfs:range <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+	rdfs:comment "Exists if the subject SpatialObject is not spatially disjoint from the object SpatialObject.DE-9IM: T******** ^ *T******* ^ ***T***** ^ ****T**** "@en ;
+	rdfs:domain <http://www.opengis.net/ont/geosparql#SpatialObject> .
+
+geo:sfCrosses a owl:ObjectProperty ;
+	rdfs:label "crosses"@en ;
+	rdfs:range <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+	rdfs:isDefinedBy <http://www.opengis.net/ont/geosparql>, <http://www.opengis.net/spec/geosparql/1.0> ;
+	rdfs:comment "Exists if the subject SpatialObject spatially crosses the object SpatialObject. DE-9IM: T*T******"@en ;
+	rdfs:domain <http://www.opengis.net/ont/geosparql#SpatialObject> .
+
+geo:sfDisjoint a owl:ObjectProperty ;
+	rdfs:domain <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+	rdfs:comment "Exists if the subject SpatialObject is spatially disjoint from the object SpatialObject. DE-9IM: FF*FF****"@en ;
+	rdfs:label "disjoint"@en ;
+	rdfs:range <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+	rdfs:isDefinedBy <http://www.opengis.net/ont/geosparql>, <http://www.opengis.net/spec/geosparql/1.0> .
+
+# ---- Datatype Properties definition ----
+
+geotir:dateunique a owl:DatatypeProperty;
+	rdfs:label "Date unique"@fr;
+	rdfs:domain geotir:Interval;
+	rdfs:comment "Date à utiliser si l'on peut pas avoir un Interval"@fr ;
+	rdfs:range xsd:dateTime.
+
+tisc:begin a owl:DatatypeProperty;
+	rdfs:label "begin"@fr;
+	rdfs:comment "This predicate can be used to express a begin of a time period"@en ;
+	rdfs:domain pleiades:Name,pleiades:Location ;
+	rdfs:range xsd:dateTime.
+
+tisc:end a owl:DatatypeProperty;
+	rdfs:label "end"@fr;
+	rdfs:comment "This predicate can be used to express an end of a time period"@en ;
+	rdfs:domain pleiades:Name,pleiades:Location ;
+	rdfs:range xsd:dateTime.
+
+tisc:fuzzybegin a owl:DatatypeProperty;
+	rdfs:label "fuzzybegin"@fr;
+	rdfs:comment "This predicate can be used to express a fuzzybegin of an imprecise time period."@en ;
+	rdfs:domain pleiades:Name,pleiades:Location ;
+	rdfs:range xsd:dateTime.
+
+tisc:fuzzyend a owl:DatatypeProperty;
+	rdfs:label "fuzzyend"@fr;
+	rdfs:comment "This predicate can be used to express a fuzzyend of an imprecise time period."@fr ;
+	rdfs:domain pleiades:Name,pleiades:Location ;
+	rdfs:range xsd:dateTime.
+
+# ---- Class copied hier to avoid imports ----
+
+pleiades:Place a owl:Class .	
+pleiades:Name a owl:Class .
+pleiades:Location a owl:Class .
+geo:Geometry a owl:Class .
+
