@@ -1,0 +1,46 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix cc: <http://creativecommons.org/ns#>.
+@prefix vann: <http://purl.org/vocab/vann/>.
+@prefix osspr: <http://data.ordnancesurvey.co.uk/ontology/spatialrelations/>.
+@prefix lsc: <http://linkedscience.org/lsc/ns#>.
+@prefix tisc: <http://observedchange.com/tisc/ns/#>.
+@prefix rlsp: <http://data.ign.fr/def/relationsspatiales#>.
+@prefix pleiades: <https://pleiades.stoa.org/places/vocab#>.
+@prefix geo: <http://www.opengis.net/ont/geosparql#>.
+@prefix geom: <http://data.ign.fr/def/geometrie#>.
+@prefix xysemantics: <http://data.ign.fr/def/xysemantics>.
+@prefix geotir: <http://datageotir.ensg.eu/vocab#>.
+
+<http://datageotir.ensg.eu/vocab/Ecretteville_GHD> a pleiades:Place;
+	rdfs:label "Ecreteville";
+	owl:sameAs <http://datageotir.ensg.eu/vocab/Ecretteville_DT>;
+	pleiades:hasFeatureType <http://datageotir.ensg.eu/vocab/clocher>;
+	pleiades:hasName <http://datageotir.ensg.eu/vocab/Ecretteville_GHD/Ecreteville>;
+	pleiades:hasLocation <http://datageotir.ensg.eu/vocab/Ecretteville_GHD/Location_Ecreteville>;
+	rlsp:southWestOf <http://datageotir.ensg.eu/vocab/ancreteville_GHD>.
+	
+<http://datageotir.ensg.eu/vocab/Ecretteville_GHD/Ecreteville> a pleiades:Name;
+	dcterms:bibliographicCitation "Cassini";
+	pleiades:during <http://datageotir.ensg.eu/vocab/interval/Cassini57>.
+
+<http://datageotir.ensg.eu/vocab/Ecretteville_GHD/Location_Ecreteville> a pleiades:Location;
+	dcterms:bibliographicCitation "Cassini";
+	pleiades:during <http://datageotir.ensg.eu/vocab/interval/Cassini57>;
+	geom:Geometry <http://datageotir.ensg.eu/vocab/Ecretteville_GHD/Geometry_Ecreteville>.
+	
+<http://datageotir.ensg.eu/vocab/Ecretteville_GHD/Geometry_Ecreteville> a  geo:Geometry;
+	geo:asWKT "<http://data.ign.fr/id/ignf/crs/RGF93CC47> POINT (518536.025172949 6968159.09317184)".
+	
+<http://datageotir.ensg.eu/vocab/interval/Cassini57> a geotir:Interval;
+	tisc:begin "1754-01-01T00:00:00"^^xsd:dateTime;
+	tisc:end "1757-12-31T00:00:00"^^xsd:dateTime.
+
+<http://datageotir.ensg.eu/vocab/clocher> a skos:Concept;
+	rdfs:label "clocher".

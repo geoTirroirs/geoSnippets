@@ -1,0 +1,194 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix cc: <http://creativecommons.org/ns#>.
+@prefix vann: <http://purl.org/vocab/vann/>.
+@prefix osspr: <http://data.ordnancesurvey.co.uk/ontology/spatialrelations/>.
+@prefix lsc: <http://linkedscience.org/lsc/ns#>.
+
+@prefix tisc: <http://observedchange.com/tisc/ns/#>.
+@prefix rlsp: <http://data.ign.fr/def/relationsspatiales#>.
+@prefix pleiades: <https://pleiades.stoa.org/places/vocab#>.
+@prefix geo: <http://www.opengis.net/ont/geosparql#>.
+@prefix geom: <http://data.ign.fr/def/geometrie#>.
+@prefix xysemantics: <http://data.ign.fr/def/xysemantics>.
+
+@prefix geotir: <http://datageotir.ensg.eu/vocab>.
+
+<http://datageotir.ensg.eu/vocab/ancreteville_DT> a pleiades:Place;
+	rdfs:label "Ancretteville-sur-Mer";
+	owl:sameAs <http://datageotir.ensg.eu/vocab/ancreteville_GHD>,
+				<http://id.insee.fr/geo/commune/76011>;
+	skos:altLabel "P. de Anschetevilla",
+		"Apud Anschetevillam",
+		"Patricia de Fiscanno quarterium de quo non reddit nisi quatuor solidos de auxilio apud Anquetervillam supra mare",
+		"Anquetervilla",
+		"Eglise Saint-Amant d'Anquetierville",
+		"Anquetiervilla",
+		"Anquetierville",
+		"Anquetierville prope Veulettes",
+		"Ancretteville sur la mer",
+		"Anquetierville sur la mer",
+		"Sanctus Amandus de Ancretevilla super mare",
+		"Fief d'Ancreteville",
+		"Ancretteville sur mer",
+		"Ancretteville sur mer",
+		"Encretteville",
+		"Ancourteville sur la mer",
+		"Saint Amans d'Ancretteville",
+		"Ancretteville sur la mer",
+		"Ancreteville-sur-mer",
+		"Ancreteville vulg. Ancourteville",
+		"Ancretteville sur mer vulg. Ancourteville",
+		"Ancretteville sur mer",
+		"Ancretteville sur mer et Plaine d'Ancretteville";
+	pleiades:hasFeatureType <http://datageotir.ensg.eu/vocab/commune>;
+	pleiades:hasName <http://datageotir.ensg.eu/vocab/ancreteville_DT/Anschetevilla>,
+		<http://datageotir.ensg.eu/vocab/ancreteville_DT/Anschetevillam>,
+		<http://datageotir.ensg.eu/vocab/ancreteville_DT/Anquetervillam>,
+		<http://datageotir.ensg.eu/vocab/ancreteville_DT/Anquetervilla>,
+		<http://datageotir.ensg.eu/vocab/ancreteville_DT/Saint_Amant_d_Anquetierville>,
+		<http://datageotir.ensg.eu/vocab/ancreteville_DT/Anquetiervilla>,
+		<http://datageotir.ensg.eu/vocab/ancreteville_DT/Anquetierville>,
+		<http://datageotir.ensg.eu/vocab/ancreteville_DT/Anquetierville_prope_Veulettes>,
+		<http://datageotir.ensg.eu/vocab/ancreteville_DT/Ancretteville_sur_la_mer1485>,
+		<http://datageotir.ensg.eu/vocab/ancreteville_DT/Anquetierville_sur_la_mer>,
+		<http://datageotir.ensg.eu/vocab/ancreteville_DT/Ancretevilla>,
+		<http://datageotir.ensg.eu/vocab/ancreteville_DT/Fief_d_Ancreteville>,
+		<http://datageotir.ensg.eu/vocab/ancreteville_DT/Ancretteville_sur_mer1637>,
+		<http://datageotir.ensg.eu/vocab/ancreteville_DT/Ancretteville_sur_mer1687>,
+		<http://datageotir.ensg.eu/vocab/ancreteville_DT/Encretteville>,
+		<http://datageotir.ensg.eu/vocab/ancreteville_DT/Ancourteville_sur_la_mer>,
+		<http://datageotir.ensg.eu/vocab/ancreteville_DT/Saint_Amant_d_Ancretteville>,
+		<http://datageotir.ensg.eu/vocab/ancreteville_DT/Ancretteville_sur_la_mer1704>,
+		<http://datageotir.ensg.eu/vocab/ancreteville_DT/Ancreteville-sur-mer>,
+		<http://datageotir.ensg.eu/vocab/ancreteville_DT/Ancreteville_vulg_Ancourteville>,
+		<http://datageotir.ensg.eu/vocab/ancreteville_DT/Ancretteville_sur_mer_vulg_Ancourteville>,
+		<http://datageotir.ensg.eu/vocab/ancreteville_DT/Ancretteville_sur_mer1953>,
+		<http://datageotir.ensg.eu/vocab/ancreteville_DT/Ancretteville_sur_mer_et_Plaine_d_Ancretteville>.
+	
+
+<http://datageotir.ensg.eu/vocab/commune>a skos:Concept;
+	rdfs:label "commune".
+	
+<http://datageotir.ensg.eu/vocab/ancreteville_DT/Anschetevilla> a pleiades:Name;
+	dcterms:bibliographicCitation "Adigard des Gautries Nomina p. 383";
+	pleiades:during <http://datageotir.ensg.eu/vocab/interval/fin12eme>.
+	
+<http://datageotir.ensg.eu/vocab/ancreteville_DT/Anschetevillam> a pleiades:Name;
+	dcterms:bibliographicCitation"Rec. Henri ii, ii 349";
+	geotir:dateunique "1177-01-01T00:00:00"^^xsd:dateTime, "1189-01-01T00:00:00"^^xsd:dateTime.
+	
+<http://datageotir.ensg.eu/vocab/ancreteville_DT/Anquetervillam> a pleiades:Name;
+	dcterms:bibliographicCitation "H. Fr. <sm>xxiii,</sm> 645";
+	pleiades:during <http://datageotir.ensg.eu/vocab/interval/vers1210>.
+	
+<http://datageotir.ensg.eu/vocab/ancreteville_DT/Anquetervilla> a pleiades:Name;
+	dcterms:bibliographicCitation "H. Fr. <sm>xxiii,</sm> 289";
+	pleiades:during<http://datageotir.ensg.eu/vocab/interval/vers1240>.
+	
+<http://datageotir.ensg.eu/vocab/ancreteville_DT/Saint_Amant_d_Anquetierville> a pleiades:Name;
+	dcterms:bibliographicCitation "Arch. S.-M. G 7 p. 265";
+	geotir:dateunique "1309-01-01T00:00:00"^^xsd:dateTime.
+	
+<http://datageotir.ensg.eu/vocab/ancreteville_DT/Anquetiervilla> a pleiades:Name;
+	dcterms:bibliographicCitation "";
+	geotir:dateunique "1337-01-01T00:00:00"^^xsd:dateTime.
+	
+<http://datageotir.ensg.eu/vocab/ancreteville_DT/Anquetierville> a pleiades:Name;
+	dcterms:bibliographicCitation "Longnon 28, 85";
+	geotir:dateunique "1431-01-01T00:00:00"^^xsd:dateTime.
+
+<http://datageotir.ensg.eu/vocab/ancreteville_DT/Anquetierville_prope_Veulettes> a pleiades:Name;
+	dcterms:bibliographicCitation "Arch. S.-M. G 3267, 3269";
+	geotir:dateunique "1319-01-01T00:00:00"^^xsd:dateTime, "1471-01-01T00:00:00"^^xsd:dateTime.
+	
+<http://datageotir.ensg.eu/vocab/ancreteville_DT/Ancretteville_sur_la_mer1485> a pleiades:Name;
+	dcterms:bibliographicCitation "Arch. S.-M. tab. Rouen";
+	geotir:dateunique "1485-11-10T00:00:00"^^xsd:dateTime.
+	
+<http://datageotir.ensg.eu/vocab/ancreteville_DT/Anquetierville_sur_la_mer> a pleiades:Name;
+	dcterms:bibliographicCitation "Arch. S.-M. G 3269";
+	geotir:dateunique "1557-11-10T00:00:00"^^xsd:dateTime, "1567-11-10T00:00:00"^^xsd:dateTime.
+	
+<http://datageotir.ensg.eu/vocab/ancreteville_DT/Ancretevilla> a pleiades:Name;
+	dcterms:bibliographicCitation "Arch. S.-M. G 1638";
+	pleiades:during <http://datageotir.ensg.eu/vocab/interval/16eme>.
+
+<http://datageotir.ensg.eu/vocab/ancreteville_DT/Fief_d_Ancreteville> a pleiades:Name;
+	dcterms:bibliographicCitation "Arch. S.-M. E fds. Tancarville-Fiefs de Hallebosc f. 369", "Arch. S.-M. E fds. Tancarville-Fiefs de Hallebosc f. 3v.";
+	geotir:dateunique "1581-01-01T00:00:00"^^xsd:dateTime.
+	
+<http://datageotir.ensg.eu/vocab/ancreteville_DT/Ancretteville_sur_mer1637> a pleiades:Name;
+	dcterms:bibliographicCitation "Etat civil";
+	geotir:dateunique "1637-01-01T00:00:00"^^xsd:dateTime.
+	
+<http://datageotir.ensg.eu/vocab/ancreteville_DT/Ancretteville_sur_mer1687> a pleiades:Name;
+	dcterms:bibliographicCitation "";
+	geotir:dateunique "1687-01-01T00:00:00"^^xsd:dateTime, "1696-01-01T00:00:00"^^xsd:dateTime, "1757-01-01T00:00:00"^^xsd:dateTime.
+
+<http://datageotir.ensg.eu/vocab/ancreteville_DT/Encretteville> a pleiades:Name;
+	dcterms:bibliographicCitation "";
+	geotir:dateunique "1636-01-01T00:00:00"^^xsd:dateTime, "1697-01-01T00:00:00"^^xsd:dateTime, "1700-01-01T00:00:00"^^xsd:dateTime.
+	
+<http://datageotir.ensg.eu/vocab/ancreteville_DT/Ancourteville_sur_la_mer> a pleiades:Name;
+	dcterms:bibliographicCitation "Ib. Etat civil";
+	geotir:dateunique "1648-01-01T00:00:00"^^xsd:dateTime, "1650-01-01T00:00:00"^^xsd:dateTime, "1747-01-01T00:00:00"^^xsd:dateTime.
+	
+<http://datageotir.ensg.eu/vocab/ancreteville_DT/Saint_Amant_d_Ancretteville> a pleiades:Name;
+	dcterms:bibliographicCitation "Arch. S.-M. G 7908";
+	geotir:dateunique "1646-01-01T00:00:00"^^xsd:dateTime.
+	
+<http://datageotir.ensg.eu/vocab/ancreteville_DT/Ancretteville_sur_la_mer1704> a pleiades:Name;
+	dcterms:bibliographicCitation "Pouillés";
+	geotir:dateunique "1704-01-01T00:00:00"^^xsd:dateTime, "1708-01-01T00:00:00"^^xsd:dateTime.
+
+<http://datageotir.ensg.eu/vocab/ancreteville_DT/Ancreteville-sur-mer> a pleiades:Name;
+	dcterms:bibliographicCitation "Frémont";
+	geotir:dateunique "1715-01-01T00:00:00"^^xsd:dateTime.
+	
+<http://datageotir.ensg.eu/vocab/ancreteville_DT/Ancreteville_vulg_Ancourteville> a pleiades:Name;
+	dcterms:bibliographicCitation "Cassini";
+	geotir:dateunique "1757-01-01T00:00:00"^^xsd:dateTime.
+
+<http://datageotir.ensg.eu/vocab/ancreteville_DT/Ancretteville_sur_mer_vulg_Ancourteville> a pleiades:Name;
+	dcterms:bibliographicCitation "Dict.";
+	geotir:dateunique "1788-01-01T00:00:00"^^xsd:dateTime.
+	
+<http://datageotir.ensg.eu/vocab/ancreteville_DT/Ancretteville_sur_mer1953> a pleiades:Name;
+	dcterms:bibliographicCitation "";
+	geotir:dateunique "1953-01-01T00:00:00"^^xsd:dateTime.
+
+<http://datageotir.ensg.eu/vocab/ancreteville_DT/Ancretteville_sur_mer_et_Plaine_d_Ancretteville> a pleiades:Name;
+	dcterms:bibliographicCitation "I.G.N";
+	geotir:dateunique "1957-01-01T00:00:00"^^xsd:dateTime.
+
+<http://datageotir.ensg.eu/vocab/interval/fin12eme> a geotir:Interval;
+	tisc:fuzzybegin "1170-01-01T00:00:00"^^xsd:dateTime;
+	tisc:begin "1175-01-01T00:00:00"^^xsd:dateTime;
+	tisc:end "1200-01-01T00:00:00"^^xsd:dateTime;
+	tisc:fuzzyend "1205-01-01T00:00:00"^^xsd:dateTime.
+
+<http://datageotir.ensg.eu/vocab/interval/vers1210> a geotir:Interval;
+	tisc:fuzzybegin "1205-01-01T00:00:00"^^xsd:dateTime;
+	tisc:begin "1210-01-01T00:00:00"^^xsd:dateTime;
+	tisc:end "1211-01-01T00:00:00"^^xsd:dateTime;
+	tisc:fuzzyend "1215-01-01T00:00:00"^^xsd:dateTime.
+
+<http://datageotir.ensg.eu/vocab/interval/vers1240> a geotir:Interval;
+	tisc:fuzzybegin "1235-01-01T00:00:00"^^xsd:dateTime;
+	tisc:begin "1240-01-01T00:00:00"^^xsd:dateTime;
+	tisc:end "1241-01-01T00:00:00"^^xsd:dateTime;
+	tisc:fuzzyend "1245-01-01T00:00:00"^^xsd:dateTime.
+
+<http://datageotir.ensg.eu/vocab/interval/16eme> a geotir:Interval;
+	tisc:fuzzybegin "1495-01-01T00:00:00"^^xsd:dateTime;
+	tisc:begin "1500-01-01T00:00:00"^^xsd:dateTime;
+	tisc:end "1600-01-01T00:00:00"^^xsd:dateTime;
+	tisc:fuzzyend "1605-01-01T00:00:00"^^xsd:dateTime.
+	

@@ -1,0 +1,135 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix cc: <http://creativecommons.org/ns#>.
+@prefix vann: <http://purl.org/vocab/vann/>.
+@prefix osspr: <http://data.ordnancesurvey.co.uk/ontology/spatialrelations/>.
+@prefix lsc: <http://linkedscience.org/lsc/ns#>.
+@prefix tisc: <http://observedchange.com/tisc/ns/#>.
+@prefix rlsp: <http://data.ign.fr/def/relationsspatiales#>.
+@prefix pleiades: <https://pleiades.stoa.org/places/vocab#>.
+@prefix geo: <http://www.opengis.net/ont/geosparql#>.
+@prefix geom: <http://data.ign.fr/def/geometrie#>.
+@prefix xysemantics: <http://data.ign.fr/def/xysemantics>.
+@prefix geotir: <http://datageotir.ensg.eu/vocab#>.
+
+<http://datageotir.ensg.eu/vocab/Ecretteville-sur-Mer_DT> a <https://pleiades.stoa.org/places/vocab#Place>;
+	rdfs:label "Ecretteville-sur-Mer";
+	owl:sameAs <http://datageotir.ensg.eu/vocab/Ecretteville_GHD>;
+	pleiades:hasFeatureType <http://datageotir.ensg.eu/vocab/commune>;
+	skos:altLabel "Escrutevilleta",
+		"Escrudevillette",
+		"Escruteville",
+		"Egl. Saint Martin d'Escrutevillete",
+		"Ecc. de Escrutavilleta",
+		"Escrudevilla",
+		"Escrudeville",
+		"Sanctus Martinus de Escrudevilla",
+		"Escreteville sur la mer",
+		"Saint Sauveur",
+		"Saint Martin d'Escretteville",
+		"Escredeville sur la mer",
+		"Ecretteville",
+		"Ecreteville";
+	pleiades:hasName <http://datageotir.ensg.eu/vocab/Ecretteville-sur-Mer_DT/Escrutevilleta>,
+		<http://datageotir.ensg.eu/vocab/Ecretteville-sur-Mer_DT/Escrudevillette>,
+		<http://datageotir.ensg.eu/vocab/Ecretteville-sur-Mer_DT/Escruteville>,
+		<http://datageotir.ensg.eu/vocab/Ecretteville-sur-Mer_DT/Egl-Saint-Martin-d-Escrutevillete>,
+		<http://datageotir.ensg.eu/vocab/Ecretteville-sur-Mer_DT/Ecc-de-Escrutavilleta>,
+		<http://datageotir.ensg.eu/vocab/Ecretteville-sur-Mer_DT/Escrudevilla>,
+		<http://datageotir.ensg.eu/vocab/Ecretteville-sur-Mer_DT/Escrudeville>,
+		<http://datageotir.ensg.eu/vocab/Ecretteville-sur-Mer_DT/Sanctus-Martinus-de-Escrudevilla>,
+		<http://datageotir.ensg.eu/vocab/Ecretteville-sur-Mer_DT/Escreteville-sur-la-mer>,
+		<http://datageotir.ensg.eu/vocab/Ecretteville-sur-Mer_DT/Saint-Sauveur>,
+		<http://datageotir.ensg.eu/vocab/Ecretteville-sur-Mer_DT/Saint-Martin-d-Escretteville>,
+		<http://datageotir.ensg.eu/vocab/Ecretteville-sur-Mer_DT/Escredeville-sur-la-mer>,
+		<http://datageotir.ensg.eu/vocab/Ecretteville-sur-Mer_DT/Ecretteville>,
+		<http://datageotir.ensg.eu/vocab/Ecretteville-sur-Mer_DT/Ecreteville>,
+		<http://datageotir.ensg.eu/vocab/Ecretteville-sur-Mer_DT/Ecretteville-sur-Mer-1788>,
+		<http://datageotir.ensg.eu/vocab/Ecretteville-sur-Mer_DT/Ecretteville-sur-Mer-1953>.
+		
+<http://datageotir.ensg.eu/vocab/commune> a skos:Concept;
+	rdfs:label "Commune".
+
+<http://datageotir.ensg.eu/vocab/ancreteville_DT/Escrutevilleta> a <https://pleiades.stoa.org/places/vocab#Name>;
+	dcterms:bibliographicCitation "Adigard des Gautries, Nomina 459";
+	pleiades:during <http://datageotir.ensg.eu/vocab/interval/vers1240>;
+	geotir:dateunique "1337-01-01T00:00:00"^^xsd:dateTime;
+	rdfs:comment "Pour le même texte, l'Edition de H. Fr. XXIII, p. 288 porte Estrutevilleta)".
+
+<http://datageotir.ensg.eu/vocab/Ecretteville-sur-Mer_DT/Escrudevillette> a <https://pleiades.stoa.org/places/vocab#Name>;
+   dcterms:bibliographicCitation "(Longnon 23, 85)";
+   geotir:dateunique "1431-01-01T00:00:00"^^xsd:dateTime.
+
+<http://datageotir.ensg.eu/vocab/Ecretteville-sur-Mer_DT/Escruteville> a <https://pleiades.stoa.org/places/vocab#Name>;
+   geotir:dateunique "1319-01-01T00:00:00"^^xsd:dateTime.
+
+<http://datageotir.ensg.eu/vocab/Ecretteville-sur-Mer_DT/Egl-Saint-Martin-d-Escrutevillete> a <https://pleiades.stoa.org/places/vocab#Name>;
+   dcterms:bibliographicCitation "(Arch. S.-M. G 7 p. 268 et G 1642)";
+   geotir:dateunique "1332-01-01T00:00:00"^^xsd:dateTime;.
+
+<http://datageotir.ensg.eu/vocab/Ecretteville-sur-Mer_DT/Ecc-de-Escrutavilleta> a <https://pleiades.stoa.org/places/vocab#Name>;
+   dcterms:bibliographicCitation "(Arch. S.-M. G 1642)";
+   geotir:dateunique "1341-01-01T00:00:00"^^xsd:dateTime.
+
+<http://datageotir.ensg.eu/vocab/Ecretteville-sur-Mer_DT/Escrudevilla> a <https://pleiades.stoa.org/places/vocab#Name>;
+   dcterms:bibliographicCitation "(Arch. S.-M. G 9489)";
+   pleiades:during <http://datageotir.ensg.eu/vocab/interval/1498-99>.
+
+<http://datageotir.ensg.eu/vocab/Ecretteville-sur-Mer_DT/Escrudeville> a <https://pleiades.stoa.org/places/vocab#Name>;
+   dcterms:bibliographicCitation "(Arch. S.-M. G 95)";
+   geotir:dateunique "1513-01-01T00:00:00"^^xsd:dateTime.
+
+<http://datageotir.ensg.eu/vocab/Ecretteville-sur-Mer_DT/Sanctus-Martinus-de-Escrudevilla> a <https://pleiades.stoa.org/places/vocab#Name>;
+   dcterms:bibliographicCitation "(Arch. S.-M. G 1638)";
+   pleiades:during <http://datageotir.ensg.eu/vocab/interval/16eme>.
+
+<http://datageotir.ensg.eu/vocab/Ecretteville-sur-Mer_DT/Escreteville-sur-la-mer> a <https://pleiades.stoa.org/places/vocab#Name>;
+   geotir:dateunique "1616-01-01T00:00:00"^^xsd:dateTime.
+
+<http://datageotir.ensg.eu/vocab/Ecretteville-sur-Mer_DT/Saint-Sauveur> a <https://pleiades.stoa.org/places/vocab#Name>;
+   dcterms:bibliographicCitation "(Arch. S.-M. G 8139)";
+   geotir:dateunique "1679-01-01T00:00:00"^^xsd:dateTime.
+
+<http://datageotir.ensg.eu/vocab/Ecretteville-sur-Mer_DT/Saint-Martin-d-Escretteville> a <https://pleiades.stoa.org/places/vocab#Name>;
+   dcterms:bibliographicCitation "(Arch. S.-M. G 737)";
+   geotir:dateunique "1713-01-01T00:00:00"^^xsd:dateTime.
+
+<http://datageotir.ensg.eu/vocab/Ecretteville-sur-Mer_DT/Escredeville-sur-la-mer> a <https://pleiades.stoa.org/places/vocab#Name>;
+   dcterms:bibliographicCitation "(Arch. S.-M. Tab. Rouen)";
+   geotir:dateunique "1474-09-15T00:00:00"^^xsd:dateTime.
+
+<http://datageotir.ensg.eu/vocab/Ecretteville-sur-Mer_DT/Ecretteville> a <https://pleiades.stoa.org/places/vocab#Name>;
+   dcterms:bibliographicCitation "(Frémont)";
+   geotir:dateunique "1715-01-01T00:00:00"^^xsd:dateTime.
+
+<http://datageotir.ensg.eu/vocab/Ecretteville-sur-Mer_DT/Ecreteville> a <https://pleiades.stoa.org/places/vocab#Name>;
+   dcterms:bibliographicCitation "(Cassini)";
+   geotir:dateunique "1757-01-01T00:00:00"^^xsd:dateTime.
+
+<http://datageotir.ensg.eu/vocab/Ecretteville-sur-Mer_DT/Ecretteville-sur-Mer-1788> a <https://pleiades.stoa.org/places/vocab#Name>;
+   dcterms:bibliographicCitation "(Dict.)";
+   geotir:dateunique "1788-01-01T00:00:00"^^xsd:dateTime.
+
+<http://datageotir.ensg.eu/vocab/Ecretteville-sur-Mer_DT/Ecretteville-sur-Mer-1953> a <https://pleiades.stoa.org/places/vocab#Name>;
+   dcterms:bibliographicCitation "(Nom.)";
+   geotir:dateunique "1953-01-01T00:00:00"^^xsd:dateTime.
+
+<http://datageotir.ensg.eu/vocab/interval/vers1240> a geotir:Interval;
+   tisc:fuzzybegin "1235-01-01T00:00:00"^^xsd:dateTime;
+   tisc:begin "1240-01-01T00:00:00"^^xsd:dateTime;
+   tisc:end "1241-01-01T00:00:00"^^xsd:dateTime;
+   tisc:fuzzyend "1245-01-01T00:00:00"^^xsd:dateTime.
+
+<http://datageotir.ensg.eu/vocab/interval/1498-99> a geotir:Interval;
+   tisc:begin "1498-01-01T00:00:00"^^xsd:dateTime;
+   tisc:end "1499-01-01T00:00:00"^^xsd:dateTime.
+
+<http://datageotir.ensg.eu/vocab/interval/16eme> a geotir:Interval;
+   tisc:begin "1501-01-01T00:00:00"^^xsd:dateTime;
+   tisc:end "1600-12-31T23:59:59"^^xsd:dateTime.
